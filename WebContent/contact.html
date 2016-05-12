@@ -4,6 +4,8 @@
 <link rel="shortcut icon" href="airplane.ico" type="image/x-icon"/>
 <title>Screen Printing 101- Get in contact with us.</title>
 <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+<link rel="stylesheet" type="text/css" href="CSS/contact.css" />
+
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
@@ -11,83 +13,42 @@
 </head>
 <body>
 <p><img src="images/banner1.jpg" width="1000" height="300" alt="Colorful Banner"></p>
+<hr>
 <ul id="Menu" class="MenuBarHorizontal">
-  <li><a href="#">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
   <li><a href="classroom.html">Classroom</a></li>
   <li><a href="aboutus.html">About Us</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="Feedback.html">Feedback</a></li>
+  <li><a href="index.html">Home</a></li>
 </ul>
 <p>&nbsp;</p>
 <hr>
-<h1>Contact Us:</h1>
-<p>We would love to hear your feedback on our site and also answer any screen printing questions you may have. Feel free to contact us anytime by emailing us at <a href="mailto:screenprint101@yahoo.com" target="_top"> "screenprint101@yahoo.com"</a>
-  <IMG class="images" src="images/Email.jpg" alt="Email Pic"/>
-</p>
-<form name="htmlform" method="post" action="html_form_send.php">
-  <table width="450px">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
+
  
-<tr>
- <td valign="top"">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">How did you hear about us?</label></td>
- <td valign="top"><p>
-   <label>
-     <input type="checkbox" name="Heard About Us" value="Friend" id="HeardAboutUs_0">
-     Friend</label>
-   <br>
-   <label>
-     <input type="checkbox" name="Heard About Us" value="Facebook ad" id="HeardAboutUs_1">
-     Facebook Ad</label>
-   <br>
-   <label>
-     <input type="checkbox" name="Heard About Us" value="internet search" id="HeardAboutUs_2">
-     Internet Search</label>
-   <br>
- </p></td>
- <tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Comments *</label>
- </td>
- <td valign="top">
-   <p>
-     <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-   </p>
-   <p>&nbsp; </p>
- </td>
  
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">
- </td>
-</tr>
-</table>
-</form>
+  
+  <form id="contact-form" method="POST" action="processForm.php" name="ContactForm">
+    <h2>
+      Drop us a line!
+    </h2>
+    <p class="intro">
+      We would love to hear your feedback on our site and also answer any screen printing questions you may have. Feel free to contact us anytime by emailing us at <a href="mailto:screenprint101@yahoo.com" target="_top"> "screenprint101@yahoo.com"</a>
+
+    </p> 
+
+      <p class="inputfield"><label for="subject">Subject</label></p> 
+    			<input type="text" id="name" name="name" placeholder="What's this about?" style="color: #fff;" onfocus="if (this.value == '90') {this.value=''; this.style.color='#000';}" required tabindex="1" /> 
+    
+    	<p class="inputfield"><label for="message">Your Message</label></p> 
+    			<textarea name="message" id="message" tabindex="2"></textarea> 
+    		
+      <p class="inputfield"><label for="name">Name</label></p> 
+    			<input type="text" id="name" name="name" placeholder="First and last name" style="color: #fff;" onfocus="if (this.value == '90') {this.value=''; this.style.color='#000';}" required tabindex="3" /> 
+    			 
+    	<p class="inputfield"><label for="email">Email</label></p> 
+    			<input type="text" id="email" name="email" placeholder="yourname@domain.com" required tabindex="4" />
+    			
+    	<input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />
+	 </form>
 <footer>     
         <p>© Copyright Danielle Hall, 2016.</p>            
 </footer>
