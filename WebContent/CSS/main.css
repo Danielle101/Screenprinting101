@@ -134,3 +134,13 @@ img {
 .form_table {
 	width: 625px;
 }
+ol {
+    background: #c0c0c0;
+    padding: 20px;
+    text-align: left
+}
+
+ol li {
+    background: #fcde65;
+    margin: 5px;
+}
