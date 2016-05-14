@@ -134,16 +134,7 @@ img {
 .form_table {
 	width: 625px;
 }
-ol {
-    background: #c0c0c0;
-    padding: 20px;
-    text-align: left
-}
 
-ol li {
-   
-    margin: 5px;
-}
 .fancyNav{
 	/* Affects the UL element */
 	overflow: hidden;
@@ -264,8 +255,8 @@ ol li {
 .fancyNav li a{
 	color: #5d5d5d;
 	display: inline-block;
-	font: 20px/1 Lobster,Arial,sans-serif;
-	padding: 12px 35px 14px;
+	font: 25px/1 Lobster,Arial,sans-serif;
+	padding: 12px 80px 14px;
 	position: relative;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
 	z-index:2;
@@ -281,4 +272,8 @@ ol li {
 	padding-right: 12px;
 	text-indent: -9999px;
 	width: 16px;
+}
+ol {
+    background: #c0c0c0;
+    text-align: left;
 }
